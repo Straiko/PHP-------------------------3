@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #0b3d91 url('stardust.png'); /* Тёмно-синий фон и звёздный фон */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #fff;
+}
+
+.login-container {
+    background-color: rgba(0, 0, 0, 0.7); 
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    width: 320px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.login-container label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ccc;
+    text-align: left;
+    font-size: 14px;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 6px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+.login-container input[type="text"]:focus,
+.login-container input[type="password"]:focus {
+    border-color: #00ffcc; /* Неон */
+    outline: none;
+}
+
+/* вход */
+.login-container button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(45deg, #00ffcc, #0099ff); /* Градиент */
+    border: none;
+    border-radius: 6px;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.login-container button:hover {
+    background: linear-gradient(45deg, #0099ff, #00ffcc);
+}
+
+.login-container::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    background: linear-gradient(45deg, #00ffcc, #0099ff, #ff00cc, #ff9900);
+    z-index: -1;
+    border-radius: 16px;
+}
